@@ -5,7 +5,7 @@
     <string name="btn_socket_connect">Connect</string>
     <string name="btn_socket_disconnect">Disconnect</string>
     <string name="btn_resp_clear">Clear</string>
-    <string name="text_IP_hint">IP address</string>
+    <string name="text_IP_hint">Host</string>
     <string name="text_port_hint">port</string>
     <string name="btn_Confirm">Confirm</string>
     <string name="btn_Cancel">Cancel</string>

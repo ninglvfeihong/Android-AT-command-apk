@@ -121,8 +121,8 @@ public class Fragment1 extends Fragment {
         });
     }
     String getDstAddr(){
-        String dstAddr = atDstAddr.getText().toString();
-        if(dstAddr.length()<8){
+        String dstAddr = atDstAddr.getText().toString().trim();
+        if(dstAddr.length()==0){
             respText.setText(respText.getText().toString()+"\nError IP!\n");
             return null;
         }
