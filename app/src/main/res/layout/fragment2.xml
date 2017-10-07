@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fragment2_background"
+    android:id="@+id/fragment2_layout"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tableRow1">
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="Button1"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/button1" />
+
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="Button2"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/button2" />
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="Button3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/button3" />
+
+    </TableRow>
+
+       <TableRow
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:id="@+id/tableRow">
+
+           <Button
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:text="Button4"
+               android:layout_weight="1"
+               android:layout_gravity="center"
+               android:id="@+id/button4" />
+           <Button
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:text="Button5"
+               android:layout_weight="1"
+               android:layout_gravity="center"
+               android:id="@+id/button5" />
+           <Button
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:text="Button6"
+               android:layout_weight="1"
+               android:layout_gravity="center"
+               android:id="@+id/button6" />
+       </TableRow>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch1"
+            android:id="@+id/switch1"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch2"
+            android:id="@+id/switch2"
+            android:layout_below="@+id/switch1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_get_temperature"
+            android:id="@+id/button13"
+            android:layout_below="@+id/text_temp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_temp"
+            android:textStyle="bold"
+            android:textColor="@color/temp_color"
+            android:text="@string/text_temperature_text"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/tableRow3">
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Button7"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/button7" />
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Button8"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/button8" />
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Button9"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/button9" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Button10"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/button10" />
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Button11"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/button11" />
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Button12"
+                android:id="@+id/button12"
+                android:layout_weight="1"
+                android:layout_gravity="center" />
+        </TableRow>
+    </LinearLayout>
+
+</TableLayout>

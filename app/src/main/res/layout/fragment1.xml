@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_IP_hint"
+            android:layout_weight="2"
+            android:id="@+id/dst_addr"
+            android:inputType="text" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dst_port"
+            android:layout_weight="1"
+            android:hint="@string/text_port_hint"
+            android:inputType="number" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/btn_socket_connect"
+            android:id="@+id/btn_connect"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/btn_resp_clear"
+            android:id="@+id/btn_clear"/>
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/text_background">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginLeft="@dimen/fragment1_horizontal_margin"
+                android:id="@+id/at_command_resp_text"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="true" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/at_command_input"
+            android:layout_weight="1"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/at_command_send_btn"
+            android:text="@string/btn_command_send"
+            android:layout_column="1" />
+    </TableRow>
+
+</LinearLayout>

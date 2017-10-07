@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/popupWindow"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:id="@+id/textBtnName"
+        android:hint="Button Name"
+        android:inputType="textNoSuggestions"
+        android:textColorHint="@color/darker_white" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/textBtnCmd"
+        android:lines="2"
+        android:hint="Command"
+        android:textColorHint="@color/darker_white"
+        android:layout_below="@+id/textBtnName"
+        android:inputType="textNoSuggestions" /><!--to fix the error that SPAN_EXCLUSIVE_EXCLUSIVE. the popup window may not support text suggest,so the exception may cause in pop up widow-->
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBtnCmd"
+        android:layout_centerHorizontal="true">
+        <Button
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Cancel"
+            android:id="@+id/btn_Cancel"
+            android:layout_marginRight="8dp"
+            android:longClickable="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Confirm"
+            android:id="@+id/btn_Confirm"
+            android:layout_marginLeft="8dp"
+            android:longClickable="true"
+            style="@style/AppTheme"/>
+    </TableRow>
+
+
+</RelativeLayout>
