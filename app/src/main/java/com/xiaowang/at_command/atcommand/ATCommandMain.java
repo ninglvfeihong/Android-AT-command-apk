@@ -33,6 +33,12 @@ public class ATCommandMain extends FragmentActivity {
         display.getSize(size);
         screen_pix_x = size.x;
         screen_pix_y = size.y;
+
+        //override strict mode default behavior to all network operation in main thread. However I have to accept the consequences:
+        // the app will (in areas of spotty internet connection) become unresponsive and lock up, the user perceives slowness and has to do a force kill,
+        // and you risk the activity manager killing your app and telling the user that the app has stopped.
+        android.os.StrictMode.ThreadPolicy policy = new android.os.StrictMode.ThreadPolicy.Builder().permitAll().build();
+        android.os.StrictMode.setThreadPolicy(policy);
     }
 
     @Override
