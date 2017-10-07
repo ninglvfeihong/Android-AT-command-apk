@@ -96,7 +96,7 @@ public class Fragment2 extends Fragment {
                 indexToButton.get(temperatureIndex).setEnabled(false);
                 str="";
                 cnt=searchForTempretureTimes;
-                p = Pattern.compile("RESPATR:\\w+,(\\d+),0402,0000,(\\d+),29,(\\w+)");
+                p = Pattern.compile("RESPATR:\\w+,(\\w+),0402,0000,(\\d+),29,(\\w+)");
                 Log.d(TAG,"str and cnt Initialized");
                 Log.d(TAG,"new timer");
                 timer = new Timer();    //new is dengerous, it create a timer every clicked. this may lead memory and other problem. here, for easy, don't want to change.
